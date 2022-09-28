@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}ID песни{{ data.id }}{% endblock %}
+
+{% block content %}
+    <div class="track-info-wrap">
+        <div class="cover-wrap">
+            {% load static %}
+            <img class="cover" src="{% static data.cover_path %}" alt="track-cover">
+            <div class="track-info-section">
+                <span class="track-name">
+                    <strong>
+                    {{ data.title }}
+                    </strong>
+
+                </span>
+                <span class="track-author">
+                    {{ data.author }}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <p>{{ data.chords|linebreaksbr }}</p>
+
+{% endblock %}

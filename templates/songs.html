@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Список аккордов{% endblock %}
+
+{% block content %}
+    <h2>Список аккордов</h2>
+    {% for song in data.songs %}
+        {% include 'song_element.html' with element=song %}
+    {% empty %}
+        <li>Список пуст</li>
+    {% endfor %}
+
+{% endblock %}

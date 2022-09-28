@@ -1,0 +1,79 @@
+body {
+    font-family: Arial;
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: Playfair Display;
+    src: url(../fonts/PlayfairDisplay.ttf);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+    height: fit-content;
+}
+
+.content-wrap {
+    margin: 12px 10vw 0 10vw;
+}
+
+#logo {
+    font-family: "Playfair Display";
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.song-el {
+    background: #f2f4f5;
+    padding: 8px;
+    width: fit-content;
+    margin-top: 4px;
+    border-radius: 10px;
+}
+
+.track-info-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cover-wrap {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    background: #f2f4f5;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.track-info-section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.cover {
+    border-radius: 10px;
+    width: 80px;
+}
+
+.track-name {
+    font-family: "Arial Black";
+
+}
+
+.track-author {
+    color: #818c99;
+}

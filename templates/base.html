@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <meta charset="utf-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="header">
+    <a href="/"><span id="logo">Тоника</span></a>
+</div>
+<div class="content-wrap">
+    {% block content %}{% endblock %}
+</div>
+</body>
+</html>

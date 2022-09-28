@@ -1,2 +1,3 @@
-<div class="song-el"><a href="{% url 'song_url' song.id %}"> <strong>{{ song.author }}</strong> - {{ song.title }}</a>
+<div class="song-el"><a href="{% url 'song_url' song.id %}"> <strong>{{ song.author.name }}</strong> - {{ song.name }}
+</a>
 </div>

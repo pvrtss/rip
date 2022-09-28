@@ -11,10 +11,26 @@ body {
 
 .header {
     display: flex;
+    height: 50px;
+    justify-content: flex-start;
+}
+
+.left-child {
+    padding: 12px;
+}
+
+.right-child {
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 50px;
+}
+
+.admin-button {
+    color: white;
+    background: #2869a9;
+    border: 1px solid #2869a9;
+    border-radius: 4px;
 }
 
 a, a:link, a:visited, a:hover, a:active {

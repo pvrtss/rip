@@ -8,7 +8,12 @@
 </head>
 <body>
 <div class="header">
-    <a href="/"><span id="logo">Тоника</span></a>
+    <div class="left-child">
+        <a href="/admin">
+            <button class="admin-button">Admin</button>
+        </a>
+    </div>
+    <div class="right-child"><a href="/"><span id="logo">Тоника</span></a></div>
 </div>
 <div class="content-wrap">
     {% block content %}{% endblock %}
